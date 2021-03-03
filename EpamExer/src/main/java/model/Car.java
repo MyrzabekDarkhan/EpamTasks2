@@ -1,13 +1,13 @@
 package model;
 
 public class Car {
-    public int id;
-    public String brand;
-    public String model;
-    public String color;
-    public int price;
-    public int year;
-    public String registerNumber;
+    private int id;
+    private String brand;
+    private String model;
+    private String color;
+    private int price;
+    private int year;
+    private String registerNumber;
 
 
     public Car(int id, String brand, String model, String color, int price, String registerNumber, int year) {
@@ -21,12 +21,18 @@ public class Car {
     }
 
 
-    public int getId() {
-        return id;
+
+    public Car(int id, String brand, String model, String registerNumber, int year) {
+        this.id = id;
+        this.brand = brand;
+        this.model = model;
+        this.registerNumber = registerNumber;
+        this.year = year;
     }
 
-    public void setId(int id) {
-        this.id = id;
+
+    public int getId() {
+        return id;
     }
 
     public String getBrand() {
